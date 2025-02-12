@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://c63f64ljf4gbq"]
+
+[ext_resource type="Texture2D" uid="uid://mxbvxbu4rqi5" path="res://icon.svg" id="1_u5w1y"]
+[ext_resource type="Texture2D" uid="uid://dj8g4c4vrb4j6" path="res://rhino_PNG18.png" id="2_msal7"]
+[ext_resource type="Texture2D" uid="uid://0ma74knyxutm" path="res://pngtree-elephant-asian-elephant-png-image_6653067.png" id="3_ft5ci"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(78, 87)
+texture = ExtResource("1_u5w1y")
+
+[node name="RhinoPng18" type="Sprite2D" parent="."]
+position = Vector2(407, 355)
+scale = Vector2(0.47974, 0.47448)
+texture = ExtResource("2_msal7")
+
+[node name="Sprite2D" type="Sprite2D" parent="RhinoPng18"]
+position = Vector2(1235.72, 231.404)
+scale = Vector2(2.19073, 2.16849)
+texture = ExtResource("3_ft5ci")
+
+[node name="Tower" type="ColorRect" parent="RhinoPng18/Sprite2D"]
+anchors_preset = -1
+anchor_top = -0.135
+anchor_bottom = -0.135
+offset_left = -266.25
+offset_top = -17.2921
+offset_right = -137.25
+offset_bottom = 174.708
+color = Color(0.12549, 1, 1, 1)
+
+[node name="OfPiza" type="ColorRect" parent="RhinoPng18/Sprite2D"]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = -0.329
+anchor_right = 0.5
+anchor_bottom = -0.329
+offset_left = -400.578
+offset_top = -151.552
+offset_right = -309.578
+offset_bottom = 46.4479
+color = Color(0.12549, 1, 1, 1)
