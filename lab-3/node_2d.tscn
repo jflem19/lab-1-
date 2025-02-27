@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://byhpe8relnq2k"]
+
+[ext_resource type="Texture2D" uid="uid://dqeakxvv0udu7" path="res://train.png" id="1_4nql1"]
+[ext_resource type="Script" path="res://train1.gd" id="2_mf2fi"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Train" type="Sprite2D" parent="."]
+position = Vector2(519, 326)
+scale = Vector2(0.38, 0.752941)
+texture = ExtResource("1_4nql1")
+script = ExtResource("2_mf2fi")
