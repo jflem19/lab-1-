@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcggyfakuoxp5"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_jdfwt"]
+[ext_resource type="Texture2D" uid="uid://b1ia5iyto87wn" path="res://icon.svg" id="2_kljmr"]
+
+[node name="player1" type="Node2D"]
+script = ExtResource("1_jdfwt")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Health bar
+"
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(334, 381)
+scale = Vector2(2.71875, 2.5)
+texture = ExtResource("2_kljmr")
