@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://c63f64ljf4gbq"]
+[gd_scene load_steps=6 format=3 uid="uid://c63f64ljf4gbq"]
 
 [ext_resource type="Texture2D" uid="uid://mxbvxbu4rqi5" path="res://icon.svg" id="1_u5w1y"]
 [ext_resource type="Texture2D" uid="uid://dj8g4c4vrb4j6" path="res://rhino_PNG18.png" id="2_msal7"]
 [ext_resource type="Texture2D" uid="uid://0ma74knyxutm" path="res://pngtree-elephant-asian-elephant-png-image_6653067.png" id="3_ft5ci"]
+[ext_resource type="PackedScene" uid="uid://dqko2f0a265j" path="res://scene11.tscn" id="4_w8y70"]
+[ext_resource type="PackedScene" uid="uid://dj666mfv45bnj" path="res://scene22.tscn" id="5_a5048"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -41,3 +43,13 @@ offset_top = -151.552
 offset_right = -309.578
 offset_bottom = 46.4479
 color = Color(0.12549, 1, 1, 1)
+
+[node name="Node2D" parent="RhinoPng18/Sprite2D" instance=ExtResource("4_w8y70")]
+position = Vector2(-258.639, -847.305)
+
+[node name="Node2D2" parent="RhinoPng18/Sprite2D" instance=ExtResource("4_w8y70")]
+visible = false
+position = Vector2(-918.974, 231.512)
+
+[node name="Node2D3" parent="RhinoPng18/Sprite2D" instance=ExtResource("5_a5048")]
+position = Vector2(-1000.8, 85.7255)
